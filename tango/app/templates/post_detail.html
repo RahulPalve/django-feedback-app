@@ -3,10 +3,12 @@
 <link rel="stylesheet" href="{% static 'css/app.css' %}">
 </head>
 <body>
-    <h1>Share Your Views On hStream</h1>
+    <h1>Feedback by {{post.name}}</h1>
     <i>Given response</i>
     <div>
-        <h2><a href="{% url 'post_detail' post.pk %}">{{ post.name }}</a></h2> 
+        <h2>{{ post.name }}</h2> 
+        <h3>{{post.emaill}}</h3>
+        <h3>{{post.pdate}}</h3>
         <p>{{ post.res }}</p>                                                              
                                             
     </div>
