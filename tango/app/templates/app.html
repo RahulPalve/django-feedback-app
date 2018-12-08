@@ -1,0 +1,17 @@
+{% load staticfiles %}
+<head><title>Welcome to hStream</title>
+<link rel="stylesheet" href="{% static 'css/app.css' %}">
+</head>
+<body>
+    <h1>Share Your Views On hStream</h1>
+    <i>Given responses</i>
+    <div>
+
+        {% for post in posts %}
+
+        <h2><a href="{% url 'post_detail' post.pk %}">{{ post.name }}</a></h2>                                                                     
+
+        {% endfor %}
+        <form >   </form>
+    </div>
+</body>
